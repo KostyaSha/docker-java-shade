@@ -176,10 +176,10 @@
                         <!-- com.github.kostyasha.yad.docker_java.org.glassfish.jersey.internal.RuntimeDelegateImpl could not be instantiated:
                          java.lang.IllegalStateException: No generator was provided and there is no default
                          generator registered -->
-                        <!--<relocation>-->
-                        <!--<pattern>org.glassfish</pattern>-->
-                        <!--<shadedPattern>${shade-prefix}.org.glassfish</shadedPattern>-->
-                        <!--</relocation>-->
+                        <relocation>
+                            <pattern>org.glassfish</pattern>
+                            <shadedPattern>${shade-prefix}.org.glassfish</shadedPattern>
+                        </relocation>
 
 
                         <relocation>
